@@ -1,0 +1,365 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/NEXONLv2Gothic/NEXONLv2Gothic.css');
+
+/* 전역 변수 선언 */
+
+:root {
+    --primary-font-family: "Pretendard", sans-serif;
+    --primary-font-special: "NEXON Lv2 Gothic", sans-serif;
+    --primary-font-size: 16px;
+    --primary-font-color: #313131;
+    --primary-layout-min-size: 300px;
+}
+
+/* 스타일 초기화 작업 */
+
+* {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    min-width: var(--primary-layout-min-size);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ul, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+/* 스타일 공통 설정 */
+
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font-family);
+}
+
+html {
+    font-size: var(--primary-font-size);
+    background-color: rgba(221, 225, 229, 0.2);
+}
+
+body {
+    color: var(--primary-font-color);
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* 특정 폰트 사용시 */
+.special-font {
+    font-family: var(--primary-font-special);
+}
+
+/* 스타일 세부 작업 */
+
+header {
+    background: #fff;
+    height:62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+}
+
+header span {
+    margin: 3px;
+}
+
+.center-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.gift-btn{
+    position: relative;
+    margin: 5px;
+}
+
+.gift-btn:hover{
+    color: #0a74ff;
+}
+
+.badge {
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    background: #0a74ff;
+    color: #fff;
+    font-size: 0.65rem;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-label {
+    position: absolute;
+    top: 20px;
+    left: 38%;
+    transform: translateX(-50%);
+    background: #17191d;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 2px 3px;
+    border-radius: 999px;
+    white-space: nowrap;
+    visibility: hidden;
+}
+
+.reco-label {
+    background: #ef4eae;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 999px;
+    padding: 1px 5px 0 5px;
+    margin-left: 10px;
+}
+
+.new-label {
+    background: #ef5d5d;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 999px;
+    padding: 1.5px 5px 0 5px;
+    margin-left: 10px;
+}
+
+.gift-btn:hover .hidden-label {
+    visibility: visible;
+}
+
+.sign-in-btn {
+    border: 2px solid #17191d;
+    border-radius: 999px;
+    background: #fff;
+    padding: 4px 13px;
+    font-size: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sign-in-icon {
+    display: none;
+}
+
+nav {
+    background: #fff;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+nav > div {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;    
+}
+
+nav button {
+    border: 0;
+    background: #fff;
+    padding: 13px 13px;
+    font-size: inherit;
+    color: #abb1bd;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+nav button:hover {
+    color: #0a74ff;
+}
+
+nav button.active {
+    color: #17191d;
+    font-weight: 500;
+    border-bottom: 2px solid #17191d;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1 {
+    margin: 30px 0px 15px 0px;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container1 {
+    border: 1px solid #eee;
+    background: #fff;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.container2 {
+    border: 1px solid #eee;
+    background: #fff;
+    height: 100%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.wrap1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+}
+
+.wrap2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .right-menu {
+        display: none;
+    }
+    .sign-in-icon {
+        display: inline-block;
+    }
+    .wrap1 {
+        grid-template-columns: 1fr;
+    }
+    .wrap2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.secu-dashboard {
+    padding: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.status-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.status-anon {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.status-anon-q {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    background: #bcc3cc;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+}
+
+.status-anon-q:hover {
+    background: #0a74ff;
+}
+   
+.service-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sign-in-btn-2 {
+    border: 1px solid #17191d;
+    background: #fff;
+    padding: 10px 68px;
+    cursor: pointer;
+}
+
+.sign-in-btn-2:hover {
+    background: #777d8a;
+    color: #fff;
+}
+
+.sub-title {
+    display: flex;
+}
+
+.sub-text {
+    font-size: 0.9rem;
+    color: #777d8a;
+    line-height: 1.6;
+    word-break: keep-all;
+    margin-top: 20px;
+}
+
+.parallel {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.container2:hover{
+    background: #0a74ff;
+    color: #eee;
+}
+
+.container2:hover .sub-text{
+    background: #0a74ff;
+    color: #eee;
+}
+
+footer {
+    height: 80px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    color: #abb1bd;
+}

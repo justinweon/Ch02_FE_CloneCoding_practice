@@ -1,0 +1,463 @@
+/*1. 상단 메뉴 + 헤더 구성*/
+
+.header {
+  position: relative;   /* 로고 절대위치 기준점 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* 왼쪽 메뉴 버튼 */
+.btn-menu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.icon-menu {
+  width: 20px;
+  height: 20px;
+}
+
+/* 가운데 로고 - 절대 위치로 중앙 고정 */
+.logo {
+  position: absolute;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* 오른쪽 유틸 영역 */
+.right-mp {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.signup-botton {
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+}
+
+.login-botton {
+  padding: 8px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;   /* 캡슐(pill) 모양 */
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.login-botton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/*2*/
+
+.sub-banner {
+  padding: 30px;
+}
+
+.sub-banner-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recommend {
+  margin-bottom: 20px;
+}
+
+.tag-line {
+  display: inline-block;
+  color: #00b8a9;
+}
+
+.left-right-btn {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.left-right-btn button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.call-center-link {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.call-center-link li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.call-center-link li a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* 게임카드 + 로그인박스 묶는 영역 */
+.game-and-login {
+  display: flex;
+  justify-content: space-between;
+  clear: both; /* float 때문에 밀리는 거 방지 */
+  padding-top: 20px;
+}
+
+
+/* 게임카드 */
+.game-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.game-list li {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.game-list img {
+  width: 150px;
+  height: 150px;
+}
+
+.game--title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/* pick, 추천 뱃지 */
+.game-list span {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+
+/* 로그인 박스 */
+.login-box {
+  width: 400px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.btn-naver-login {
+  width: 100%;
+  padding: 15px;
+  background-color: #4dd964;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sns-login {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+.sns-title {
+  color: #999;
+  font-size: 14px;
+}
+
+.sns-icon-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.sns-icon-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.signup {
+  float: right;
+}
+
+
+/*3. 전체 게임 배너 구성*/
+.all-game {
+  padding: 30px;
+}
+
+.all-game-header {
+  margin-bottom: 20px;
+}
+
+.all-game-title {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.viewtype {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.btn-thumbnail,
+.btn-list {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #eee;
+}
+
+.btn-thumbnail.is-active {
+  background-color: black;
+}
+
+.icon-thumbnail,
+.icon-list {
+  color: white;
+}
+
+.btn-community {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.game-search {
+  float: right;
+}
+
+.game-search input {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.game-search button {
+  border: none;
+  background: none;
+}
+
+
+/* 필터 태그 */
+.filter-tags {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+  clear: both;
+}
+
+.filter-tags li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.filter-tags li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.filter-tags li a.is-active {
+  background-color: black;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+
+/* 게임 카드 리스트 */
+.all-game-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.all-game-card {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.thumb {
+  position: relative;
+}
+
+.thumb img {
+  width: 300px;
+  height: 200px;
+}
+
+.btn-video {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.game-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.game-genre {
+  color: #999;
+  font-size: 14px;
+}
+
+.badge-update {
+  display: inline-block;
+  background-color: #4dd964;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.badge-event {
+  color: blue;
+  font-weight: bold;
+}
+
+.platform-icons {
+  list-style: none;
+  float: right;
+  margin-top: -20px;
+}
+
+.platform-icons li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  margin-left: 5px;
+}
+
+
+
+/*4. footer 구성*/
+.main-footer {
+  background-color: #2b2b2b;
+  color: #ccc;
+  font-size: 13px;
+  /* padding: 0 40px 30px; */
+}
+
+/* 상단 공지 바 */
+.footer-notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 24px 0; */
+  border-bottom: 1px solid #444;
+}
+
+.footer-notice > a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-sns {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-sns li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* 메인 nav 1, 2 공통 */
+.footer-nav1,
+.footer-nav2 {
+  display: flex;
+  gap: 24px;
+  /* padding-top: 20px; */
+}
+
+.footer-nav1 a,
+.footer-nav2 a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-nav1 a:hover,
+.footer-nav2 a:hover {
+  color: #fff;
+}
+
+
+/* 회사 정보 */
+.address {
+  font-style: normal;   /* address 기본 이탤릭 해제 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  color: #888;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.address a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.address a:hover {
+  color: #ccc;
+}
+
+

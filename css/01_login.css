@@ -1,0 +1,318 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+/* 초기화 S */
+body {
+    margin: 0;
+}
+
+ul,
+ol,
+dt,
+dd,
+dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 초기화 E */
+
+/* 공통 스타일 S */
+:root {
+    --font-main:'Pretendard Variable', pretendard, -apple-system, sans-serif;
+    --main-max-size: 500px;
+    --main-min-size: 470px;
+    --primary-font-size: 14px;
+    --primary-font-color: #0A0A0A;
+}
+
+section {
+    padding-left: 16px;
+    padding-right: 16px;
+    ;
+}
+
+* {
+    font-family: var(--font-main);
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--primary-font-size);
+}
+
+body {
+    color: var(--primary-font-color);
+}
+
+
+input[type='text'],
+input[type='submit'],
+input[type='email'],
+input[type='password'] {
+    width: 100%;
+    height: 56px;
+    border: 1px solid rgb(220 224 229);
+    border-radius: 3px;
+    padding: 16px;
+    font-size: 1.15rem;
+}
+
+
+input[type='email']:focus,
+input[type='password']:focus {
+    border: 1px solid #0A74FF;
+    outline: none;
+}
+
+
+input+input {
+    margin-top: 13px;
+}
+
+input::placeholder {
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+input[type='submit'] {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input[type='submit']:hover {
+    background: #0A74FF;
+}
+
+
+button[type="button"]:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+
+button {
+    border: 0;
+    padding: 0;
+}
+
+
+/* 공통 스타일 S */
+
+
+
+.main {
+    max-width: var(--main-max-size);
+    min-width: var(--main-min-size);
+    width: 100%;
+    margin: 162px auto 100px;
+}
+
+.login_tabs {
+    padding-bottom: 35px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.login_tabs input[type='radio'] {
+    display: none;
+}
+
+
+.login_tabs input[type='radio']+label {
+    width: calc(100% / 3);
+    color:gray;
+    text-align: center;
+    display: block;
+    float: left;
+    border-bottom: 2px solid #f8f8f8;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.login_tabs input[type='radio']:checked+label {
+    border-bottom-color: #000;
+    color:#000;
+    font-weight: 600;
+}
+
+.login_tabs::after {
+    content: '';
+    clear: left;
+}
+
+.login_tabs input[type='radio']+label:hover{
+    color:#0A0A0A
+}
+
+
+.innersection {
+    margin-top: 40px;
+}
+
+.stay label{
+    color:#222522;
+    font-size: 10.5px;
+    margin-left: 7px;
+}
+.stay input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+
+    border: 1px solid #b0b8c1;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+}
+
+.stay{
+    display:flex;
+    align-items: start;
+    margin-top:10px;
+
+    font-size: 12px;
+}
+
+.below_login{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.find_my>a{
+    font-size: 14px;
+    color:gray
+}
+
+.find_my{
+    display: flex;
+    column-gap: 12px;
+}
+
+.find_my>a:hover {
+    color:gray;
+    text-decoration: underline;
+}
+
+.security_center>button {
+    color: #0A74FF;
+    background:none;
+
+    display:flex;
+    align-items: center;
+}
+
+.security_center>button:hover {
+    color: #0A74FF;
+    text-decoration: underline;
+}
+
+.security_center> div img{
+    width:16px;
+    height:16px;
+}
+
+.no_decoration{
+    text-decoration: none;
+    color:inherit;
+}
+
+.OR{
+    text-align: center;
+    margin-top: 35px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+}
+
+.OR>span{
+    font-weight: bold;
+    color:gray;
+}
+
+.OR::after,
+.OR::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: calc(50% - 30px);
+    display: block;
+    background: #ccc;
+    top: 12px;
+    
+}
+
+.OR::before {
+    left: 0;
+}
+
+.OR::after {
+    right: 0;
+}
+
+.altlog{
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.alt_account>div {
+    display: flex;
+    justify-content: center;
+
+    width: 350px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.alt_account>div button {
+    background: transparent;
+}
+
+.nexon {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.stay>input {
+    margin-left: 8px;
+}
+
+.promo img{
+    width: 100%;
+    height:auto;
+    display:block;
+    margin-top: 52px;
+}
+
+
+
+.copyright{
+    color:#9097A3;
+    font-size: 12px;
+    line-height: 10px;
+    font-weight: 400;
+    padding: 15px;
+
+    display:flex;
+    justify-content: center;
+    
+}
+

@@ -1,0 +1,123 @@
+
+    @charset "UTF-8";
+    
+    
+    @font-face {
+      font-family: 'GangwonEducationModuche';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+      font-weight: 300;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'GangwonEducationModuche';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    html {
+        font-family: 'GangwonEducationModuche', -apple-system, 'Segoe UI',
+                   'Malgun Gothic', sans-serif;
+        font-size: 16px;
+        }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    .login_box {
+        width: 50px;
+        height: 20px;
+        border-radius: 10px / 10px ;
+        background-color: rgba(89, 158, 187, 0.152);
+        padding:10px;
+        border: 1.5px black;
+        color:black;
+        transition: color .45s ease, transform .45s ease;
+        }
+    
+    .login_box:hover {
+        color:rgb(162, 52, 236);
+        background-color: rgba(237, 234, 245, 0.849);
+        }
+    
+    a {     /* 하이퍼 링크 밑줄 없애기 */
+        text-decoration-line: none;
+        text-align: center;
+        color: black;
+        transition: color .35s ease, transform .35s ease;
+        }
+
+    .image {
+        display:flex;
+        background-image: url(https://rs.nxfs.nexon.com/bannerusr/26/9/050x08170755744.png);
+        height: 430px;
+        }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr 3fr 2fr;
+        height: 130px;
+        background-color: white
+        }
+
+    .category {
+        text-align: center;
+        width: 450px;
+        font-size: 1.6rem;
+        padding:50px;
+        color: black;
+        background-image: linear-gradient(rgb(254, 254, 254), rgba(182, 193, 250, 0.271));
+        border-bottom: 3px solid rgba(195, 203, 245, 0.901);
+        transition: background-image 0.35s ease, transform .35s ease;
+        }
+    .category:hover {
+        background: linear-gradient(white,rgba(133, 133, 238, 0.377));
+        border-radius: 50px;
+        }
+    #category1 {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        }
+    #category3 {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        }
+    a:hover {
+        color:rgb(60, 67, 129);
+
+        }
+    .main {
+        display:grid;
+        font-size: 1.3rem;
+        grid-template-columns: 80px 700px 150px;
+        background-color: white;
+        gap: 5px;
+        justify-content: center;
+        }
+    
+    .card {
+        text-align: center;
+        align-items: center;
+        border: 1.5px solid rgb(0, 0, 0, 0.4);
+        height: 40px;
+        padding-top:20px;
+    }
+        
+
+    .footer {
+        height: 280px;
+        background-color: rgba(4, 3, 15, 0.863);
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns:50px repeat();
+        padding:10px 0px 0px 10px;
+        font-size: 1rem;
+        color:rgba(184, 181, 181, 0.74)
+    }
+    .NEXON {
+        display: block;
+        color: rgba(160, 160, 160, 0.582);
+    }

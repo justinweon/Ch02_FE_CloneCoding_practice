@@ -1,0 +1,337 @@
+/* 고객센터 공통 스타일 */
+
+/* 지정한 너비와 높이에 안쪽 여백과 테두리를 포함한다. */
+.customer-service,
+.customer-service *,
+.customer-service::before,
+.customer-service::after,
+.customer-service *::before,
+.customer-service *::after {
+    box-sizing: border-box;
+}
+
+/* 하위 요소가 사용할 기본 글꼴과 색상 */
+.customer-service {
+    margin: 0;
+    color: #18191c;
+    background-color: #ffffff;
+    font-family: "맑은 고딕", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 브라우저가 제목과 목록에 넣는 기본 여백을 정리한다. */
+.customer-service h1,
+.customer-service h2,
+.customer-service ul {
+    margin: 0;
+    padding: 0;
+}
+
+.customer-service ul {
+    list-style: none;
+}
+
+/* 링크와 버튼은 페이지의 글꼴과 색상을 기준으로 꾸민다. */
+.customer-service a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.customer-service button {
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* 이미지 아래의 글자 기준선 여백을 없애고 원래 비율을 유지한다. */
+.customer-service img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 로고와 메뉴 배너는 너비에 맞춰 원본 비율을 유지한다. */
+.customer-service .header-logo img {
+    width: 200px;
+}
+
+.customer-service .banner-menu img {
+    width: 80px;
+}
+
+/* 게임 이미지는 로드 전에도 정사각형 공간을 확보한다. */
+.customer-service .game-card img {
+    width: 136px;
+    height: 136px;
+    object-fit: cover;
+}
+
+/* 헤더: 공통 정렬을 묶고 각 영역의 크기와 간격을 정한다. */
+.customer-service .header-top,
+.customer-service .header-account,
+.customer-service .menu-button,
+.customer-service .login-link,
+.customer-service .site-nav ul,
+.customer-service .site-nav a {
+    display: flex;
+    align-items: center;
+}
+
+.customer-service .header-top {
+    position: relative;
+    justify-content: space-between;
+    height: 63px;
+    padding: 0 20px;
+}
+
+/* 좌우 메뉴의 너비와 관계없이 헤더 전체의 중앙에 놓는다. */
+.customer-service .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customer-service .menu-button {
+    gap: 12px;
+}
+
+/* 장식용 메뉴 아이콘은 HTML 요소를 추가하지 않고 그린다. */
+.customer-service .menu-button::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: currentColor;
+    box-shadow: 0 -5px currentColor, 0 5px currentColor;
+}
+
+.customer-service .header-account {
+    gap: 18px;
+}
+
+.customer-service .login-link {
+    justify-content: center;
+    width: 85px;
+    height: 36px;
+    border: 2px solid #17191d;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.customer-service .site-nav {
+    height: 55px;
+    border-bottom: 1px solid #e5e8ed;
+}
+
+.customer-service .site-nav ul {
+    justify-content: center;
+    gap: 36px;
+    height: 100%;
+}
+
+.customer-service .site-nav li,
+.customer-service .site-nav a {
+    height: 100%;
+}
+
+.customer-service .site-nav a {
+    border-bottom: 2px solid transparent;
+    color: #9fa1a7;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+/* 현재 페이지 표시에는 HTML에 있는 aria-current 값을 사용한다. */
+.customer-service .site-nav a[aria-current="page"] {
+    border-bottom-color: #17191d;
+    color: #17191d;
+    font-weight: 700;
+}
+
+.customer-service .site-nav a:hover {
+    color: #17191d;
+}
+
+/* 본문: 왼쪽 메뉴는 고정 너비, 오른쪽 콘텐츠는 남은 공간을 사용한다. */
+.customer-service .service-layout {
+    display: flex;
+}
+
+.customer-service .sidebar {
+    flex: 0 0 80px;
+    color: #ffffff;
+    background-color: #696d74;
+    text-align: center;
+}
+
+.customer-service .service-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* 배경은 본문 높이를 채우고, 안쪽 메뉴만 화면 위에 붙인다. */
+.customer-service .sidebar nav {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.customer-service .sidebar a {
+    display: block;
+}
+
+.customer-service .platform-menu li,
+.customer-service .banner-menu li {
+    border-bottom: 1px solid #7c8189;
+}
+
+.customer-service .platform-menu a {
+    padding: 20px 0;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.customer-service .platform-menu a[aria-current="true"],
+.customer-service .sidebar a:hover,
+.customer-service .sidebar a:focus-visible {
+    background-color: #484b50;
+}
+
+.customer-service .support-menu {
+    padding: 7px 0;
+}
+
+.customer-service .support-menu a {
+    padding: 7px 0;
+}
+
+/* 로그인 안내: 문구와 버튼을 세로로 놓고 콘텐츠 영역의 중앙에 맞춘다. */
+.customer-service .login-guide,
+.customer-service .login-button {
+    display: flex;
+    align-items: center;
+}
+
+.customer-service .login-guide {
+    flex-direction: column;
+    gap: 28px;
+    padding: 52px 30px;
+    background-color: #f7f8fa;
+    text-align: center;
+}
+
+/* 안내문 전체의 굵기를 낮춰 기존 strong 요소의 로그인 문구를 강조한다. */
+.customer-service .login-message {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.customer-service .login-button {
+    justify-content: center;
+    width: 240px;
+    max-width: 100%;
+    height: 56px;
+    padding: 12px 16px;
+    border: 1px solid #c4c9d4;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #18191c;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    transition: background-color 0.2s;
+}
+
+/* 마우스와 키보드로 선택했을 때 같은 색으로 강조한다. */
+.customer-service .login-button:hover,
+.customer-service .login-button:focus-visible {
+    background-color: #005cc9;
+}
+
+/* 게임 목록: 원본 목록 너비 990px에 좌우 여백 25px씩을 더한다. */
+.customer-service .game-section {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 29px 25px 30px;
+}
+
+.customer-service .game-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.customer-service .all-services-button,
+.customer-service .game-name {
+    display: flex;
+    align-items: center;
+}
+
+.customer-service .all-services-button {
+    gap: 4px;
+    color: #28313d;
+    line-height: 22px;
+}
+
+.customer-service .all-services-button::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../images/04_customer_service/icon__newWindow@2x.png") center / contain no-repeat;
+}
+
+/* 카드별 margin 대신 gap으로 줄 사이와 카드 사이 간격을 관리한다. */
+.customer-service .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 62px 32px;
+}
+
+.customer-service .game-card {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    border: 1px solid #dadee6;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s;
+}
+
+.customer-service .game-name {
+    justify-content: center;
+    height: 50px;
+    border-top: 1px solid #dadee6;
+    font-weight: 700;
+    line-height: 1.57;
+    letter-spacing: -0.48px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+/* 그림자만 바뀌므로 마우스를 올려도 카드의 크기와 배치는 유지된다. */
+.customer-service .game-card:hover,
+.customer-service .game-card:focus-visible {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* 푸터는 본문 밖에 있으므로 페이지 전체를 기준으로 정렬한다. */
+.customer-service .site-footer {
+    min-height: 89px;
+    margin-top: 17px;
+    padding: 36px 20px 34px;
+    border-top: 1px solid #ebebeb;
+    text-align: center;
+}
+
+.customer-service .site-footer small {
+    display: block;
+    color: #888888;
+    font-size: 11px;
+    line-height: 1.57;
+}

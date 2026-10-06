@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넥슨 회원로그인</title>
+    <link rel="stylesheet" href="../css/01_login.css">
+    <link rel="icon" href="../images/00_common_images/tmp1.png" type="image/png">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="nexon"><img src="../images/01_login/.svg" alt="nexon_logo"></div>
+
+        <section>
+            <div class="outersection">
+                <div class="uppersection">
+                    <div class="login_tabs">
+                        <input type="radio" name="serviceType" id="service-type-1" value="1" checked>
+                        <label for="service-type-1">넥슨ID로그인</label>
+
+                        <input type="radio" name="serviceType" id="service-type-2" value="2">
+                        <label for="service-type-2">일회용 로그인</label>
+
+                        <input type="radio" name="serviceType" id="service-type-3" value="3">
+                        <label for="service-type-3">QR로그인</label>
+                    </div>
+
+                    <div class="innersection">
+                        <div class="signin_details">
+                            <input class="details" type="email" placeholder="넥슨ID(아이디 또는 이메일)" required>
+                            <input class="details" type="password" placeholder="비밀번호" required>
+                        </div>
+                        <div class="stay">
+                            <input id="stay_signed_in" type="checkbox">
+                            <label for="stay_signed_in">로그인 상태 유지</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_submit">
+                    <input type="submit" value="넥슨 ID 로그인">
+
+                </div>
+                <div class="below_login">
+                    <div class="find_my">
+                        <a href="https://member.nexon.com/join/join.aspx?accesscode=1&src=js&redirect=https%3A//www.nexon.com/Home/Game"> 회원가입</a>
+                        <a href="https://myinfo.nexon.com/find-nexonid?src=js&showgnb=1&redirect=https%3A//nxlogin.nexon.com/auth/login%3Fredirect%3Dhttps%253A%252F%252Fwww.nexon.com%252FHome%252FGame%26usetpa%3D-%26accesscode%3D0%26signup%3D-1%26sec%3Dlogin"> 넥슨 ID 찾기</a>
+                        <a href="https://myinfo.nexon.com/find-pw?src=js&showgnb=1&redirect=https%3A//nxlogin.nexon.com/auth/login%3Fredirect%3Dhttps%253A%252F%252Fwww.nexon.com%252FHome%252FGame%26usetpa%3D-%26accesscode%3D0%26signup%3D-1%26sec%3Dlogin"> 비밀번호 찾기</a>
+                    </div>
+                    <div class="security_center">
+                        <button type="button">
+                            <img src="../images/01_login/asset.svg">
+                            <span><a class="no_decoration" href="05_security_centre.html">보안센터</a></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="OR">
+                    <span>또는</span>
+                </div>
+                <div>
+                    <p class="altlog" style="font-size: 14px"> 다른 계정으로 로그인</p>
+                </div>
+                <div class="alt_account">
+                    <div>
+                        <div class="facebook"><button type="button"><img src="../images/01_login/facebook.svg"
+                                    alt="facebook" width="56px" height="56px"></button></div>
+                        <div class="google"><button type="button"><img src="../images/01_login/google.svg" alt="google"
+                                    width="56px" height="56px"></div>
+                        <div class="naver"><button type="button"><img src="../images/01_login/naver.svg" alt="naver"
+                                    width="56px" height="56px"></div>
+                        <div class="apple"><button type="button"><img src="../images/01_login/apple.svg" alt="apple"
+                                    width="56px" height="56px"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <a class="promo" href="https://connect-naver.nexon.com/home?web_referer_service=nx_1"><img src="../images/01_login/promo.png"></a>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer">
+            <p class="copyright">© NEXON Korea Corporation All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

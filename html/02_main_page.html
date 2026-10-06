@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css 파일 불러오기-->
+    <link rel="stylesheet" href="../css/02_main_page.css">
+</head>
+<body>
+
+<!--1. 상단 메뉴 + 헤더 구성-->
+    <header class="header">
+        <button type="button" class="btn-menu">
+            <span class="icon-menu"></span>메뉴
+        </button>
+
+        <h1 class="logo">
+            <a href="#">Brand LOGO</a>
+        </h1>
+
+        <div class="right-mp">
+            <!--<span>선물 아이콘</span>--> 
+            <a href="#" class="signup-botton">회원가입</a>
+            <a href="#" class="login-botton">로그인</a>
+        </div>
+    </header>
+
+<!--================================================================-->
+
+<!--2-1. 대표 배너 1장 배치 슬라이드 화면-->
+        <section class="main-banner">
+            <h2 class="main-banner-title"></h2>
+
+            <a href="#">
+                <img src="tree.jpg">
+            </a>
+
+            <!--배너 하단 탭-->
+            <ul class="main-banner-tabs">
+                <li><a href="#">게임1</a></li>
+                <li><a href="#">게임2</a></li>
+                <li><a href="#">게임3</a></li>
+                <li><a href="#">게임4</a></li>
+            </ul>
+        </section>
+
+<!--2-2. 서브 배너 1장 배치 & 로그인 화면-->
+        <section class="sub-banner">
+            <h2 class="sub-banner-title">추천 게임</h2>
+            
+            <!--서브 배너 1장 배치-->
+            <div class="recommend">
+                <p class="tag-line">#지금 가장 많이 접속하고 있는</p>    
+                
+                <!--좌우 이동 버튼-->
+                <div class="left-right-btn">
+                    <button type="button" clas="btn-prev">&lt</button>
+                    <button type="button" clas="btn-prev">&gt</button>
+                </div>
+
+                <ul class="call-center-link">
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">보안센터</a></li>
+                </ul>
+            </div>
+
+            <div class="game-and-login">
+                <!--게임 카드-->
+                <div>
+                    <ul class="game-list">
+
+                        <!--게임1 카드-->
+                        <li class="game-card1">
+                            <a href="#">
+                                <img src="#.png">
+                                <span>pick</span>
+                                <p class="game--title">게임1</p>
+                            </a>
+                        </li>
+
+                        <!--게임2 카드-->
+                        <li class="game-card2">
+                            <a href="#">
+                                <img src="#.png">
+                                <span>pick</span>
+                                <p class="game--title">게임2</p>
+                            </a>
+                        </li>
+
+                        <!--게임3 카드-->
+                        <li class="game-card2">
+                            <a href="#">
+                                <img src="#.png">
+                                <span>pick</span>
+                                <p class="game--title">게임3</p>
+                            </a>
+                        </li>
+
+                        <!--게임4 카드-->
+                        <li class="game-card2">
+                            <a href="#">
+                                <img src="#.png">
+                                <span>pick</span>
+                                <p class="game--title">게임4</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--로그인 화면-->
+                <div class="login-box">
+                    <button type="button" class="btn-login">ID 로그인</button>
+                    <button type="button" class="btn-naver-login">Naver 로그인</button>
+
+                    <!--간편 로그인-->
+                    <div class="sns-login">
+                        <span class="sns-title">다른 계정 간편 로그인</span>
+                        <ul class="sns-icon-list">
+                            <li><a href="#">구글</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">애플</a></li>
+                        </ul>
+                    </div>
+
+                    <!--ID/PW 찾기 & 회원가입-->
+                    <div>
+                        <a href="#">ID 찾기</a>
+                        <a href="#">pw 찾기</a>
+                        <a href="#" class="signup">회원가입</a>
+                    </div>
+                </div>
+        </section>
+<!--================================================================-->
+<!--3. 전체 게임 카드 4개 구성-->
+
+        <section class="all-game" id="allGame">
+            <div class="all-game-header">
+                <h2 class="all-game-title">전체게임</h2>
+
+
+                <!--썸네일형 & 리스트형 선택 아이콘-->
+                <div class="viewtype">
+                    <button type="button" class="btn-thumbnail is-active">
+                        <span class="icon-thumbnail"></span>
+                        <span class="acchidden">섬네일형</span>
+                    </button>
+
+                    <button type="button" class="btn-list">
+                        <span class="icon-list"></span>
+                        <span class="acchidden">리스트형</span>
+                    </button>
+                </div>
+
+                <!--커뮤니티-->
+                <a href="#" class="btn-community" target="_blank">
+                    <span class="icon-community"></span>
+                    모바일게임 커뮤니티 모아보기
+                </a>
+
+            <!--게임 검색-->
+                <div class="game-search">
+                    <input type="text" placeholder="게임명 검색">
+                    <button type="button">
+                        <span class="icon-search"></span>
+                        <span class="acchidden">검색</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 필터 태그 -->
+            <ul class="filter-tags">
+                <li><a href="#" class="is-active">#전체</a></li>
+                <li><a href="#">#Windows</a></li>
+                <li><a href="#">#macOS</a></li>
+                <li><a href="#">#Android</a></li>
+                <li><a href="#">#iOS</a></li>
+                <li><a href="#">#PlayStation</a></li>
+                <li><a href="#">#SWITCH</a></li>
+                <li><a href="#">#SWITCH2</a></li>
+            </ul>
+
+            <!-- 게임 카드 리스트 -->
+            <ul class="all-game-list">
+                <li class="all-game-card">
+                    <a href="#">
+                        <div class="thumb">
+                            <img src="game.jpg">
+                            <button type="button" class="btn-video" aria-label="영상보기"></button>
+                        </div>
+                        <p class="game-title">게임1</p>
+                        <p class="game-genre">ACTION RPG</p>
+                        <ul class="platform-icons">
+                            <li class="icon-pc"></li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li class="all-game-card">
+                    <a href="#">
+                        <div class="thumb">
+                            <img src="game.jpg">
+                            <button type="button" class="btn-video" aria-label="영상보기"></button>
+                        </div>
+                        <p class="game-title">게임2</p>
+                        <p class="game-genre">RPG</p>
+                        <span class="badge badge-update">UPDATE</span>
+                        <ul class="platform-icons">
+                            <li class="icon-pc"></li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li class="all-game-card">
+                    <a href="#">
+                        <div class="thumb">
+                            <img src="game.jpg">
+                            <button type="button" class="btn-video" aria-label="영상보기"></button>
+                        </div>
+                        <p class="game-title">게임3</p>
+                        <p class="game-genre">스포츠</p>
+                        <ul class="platform-icons">
+                            <li class="icon-pc"></li>
+                            <li class="icon-mobile"></li>
+                        </ul>
+                    </a>
+                </li>
+
+                <li class="all-game-card">
+                    <a href="#">
+                        <div class="thumb">
+                            <img src="game.jpg">
+                            <button type="button" class="btn-video" aria-label="영상보기"></button>
+                        </div>
+                        <p class="game-title">게임4</p>
+                        <p class="game-genre"><span class="badge-event">EVENT</span> 방치형RPG</p>
+                        <ul class="platform-icons">
+                            <li class="icon-pc"></li>
+                            <li class="icon-mobile"></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </section>
+<!--================================================================-->
+<!--4. footer 구성-->
+
+    <footer class="main-footer">
+        <!--상단 공지 바-->
+        <div class="footer-notice">
+            <a href="#공지사항 링크">[공지] 9/18(금) 발표가 무서워요</a>
+                <ul class="footer-sns">
+                    <li>
+                        <a class=sns1 href="#">유튜브</a>
+                    </li>
+                    <li>
+                        <a class=sns2 href="#">X</a>
+                    </li>
+                    <li>
+                        <a class=sns3 href="#">페이스북</a>
+                    </li>
+                </ul>
+        </div>
+
+        <!--메인 footer-->
+        <div class="footer-nav1">
+            <a href="#"><span>이용약관</span></a>
+            <a href="#"><span>개인정보처리방침</span></a>
+            <a href="#"><span>청소년보호정책</span></a>
+            <a href="#"><span>게임IP사용가이드</span></a>
+            <a href="#"><span>게임시간선택제</span></a>
+            <a href="#"><span>고객센터</span></a>
+            <a href="#"><span>전체서비스</span></a>
+        </div>
+
+        <!-- 언어선택 마크드롭 (포기..)
+        <div class="language_choice">
+            <h3>
+                <a href="#language_choice">
+                    <span class="text">Korean</span>
+                </a>
+            </h3>
+            <ul id="language_choice">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div> -->
+
+        <div class="footer-nav2">
+            <a href="#"><span>회사소개</span></a>
+            <a href="#"><span>채용안내</span></a>
+            <a href="#"><span>윤리경영</span></a>
+            <a href="#"><span>브랜드가이드</span></a>
+            <a href="#"><span>광고문의</span></a>
+            <a href="#"><span>OOPC방</span></a>
+            <a href="#"><span>OO에센셜</span></a>
+        </div>
+
+        
+        <!--address : 연락처/소재지 정보를 나타내는 시맨틱 태그-->
+        <div>
+            <address class="address">
+                <span>㈜HTMLSTUDY 대표이사 장예지</span>
+                <span>서울특별시 구로구 디지털로33길 48</span> 
+                <span>전화 : 02-000-0000 팩스 : 02-000-0001</span>
+                <span>E-mail : hello@frontend-study.dev</span>
+                <span>사업자등록번호 : 000-00-00000</span>
+                <span>통신판매업 신고번호 : 제2024-서울구로-0000호</span>
+                <a href="#">사업자정보확인</a>
+                <span>© 2026 Frontend Study Project. All Rights Reserved. (본 페이지는 학습용 클론 코딩입니다)</span>
+            </address>
+        </div>
+
+    </footer>
+
+</body>
+</html>
