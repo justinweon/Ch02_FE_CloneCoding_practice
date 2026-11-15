@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">양석호 / 고객센터 구현과 회고</title>
+  <desc id="desc">AX 1기 HTML/CSS 팀 프로젝트. 게임별 문의 화면과 팀 진행 관리. 오른쪽에는 담당 화면을 나타낸 장식용 레이아웃 그림.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#17273F"/><stop offset="1" stop-color="#0B1322"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#A1B9D8" stroke-opacity=".04"/></pattern>
+  </defs>
+  <rect width="1200" height="340" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#grid)"/>
+  <path d="M56 48H94" stroke="#82DDBE" stroke-width="4"/>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, sans-serif">
+    <text x="108" y="54" fill="#AEBFD4" font-size="14" letter-spacing="2">AX 1 / WEB CLONE PORTFOLIO</text>
+    <text x="56" y="145" fill="#F5F8FF" font-size="64" font-weight="700" letter-spacing="2">양석호</text>
+    <text x="57" y="187" fill="#82DDBE" font-size="25" font-weight="700">고객센터</text>
+    <text x="57" y="224" fill="#BBCADE" font-size="18">게임별 문의 화면과 팀 진행 관리</text>
+    <text x="57" y="284" fill="#92A8C3" font-size="14" letter-spacing="1.5">04 / 06</text>
+    <text x="144" y="284" fill="#D2DEED" font-size="14">Flex / Sticky / Hover</text>
+  </g>
+  <rect x="766" y="48" width="390" height="244" rx="12" fill="#101D30" opacity="1"/>
+<rect x="766.5" y="48.5" width="389" height="243" rx="12" fill="none" stroke="#34445E"/>
+<circle cx="786" cy="65" r="3" fill="#82DDBE" opacity="1.0"/>
+<circle cx="799" cy="65" r="3" fill="#82DDBE" opacity="0.75"/>
+<circle cx="812" cy="65" r="3" fill="#82DDBE" opacity="0.5"/>
+<rect x="833" y="62" width="168" height="5" rx="5" fill="#3E506C" opacity="1"/>
+<path d="M767 81H1155" stroke="#34445E"/>
+<rect x="784" y="99" width="45" height="174" rx="5" fill="#253A50" opacity="1"/>
+<rect x="843" y="99" width="294" height="62" rx="5" fill="#82DDBE" opacity="0.13"/>
+<rect x="891" y="114" width="197" height="6" rx="5" fill="#82DDBE" opacity="1"/>
+<rect x="932" y="133" width="114" height="16" rx="5" fill="#82DDBE" opacity="1"/>
+<rect x="793" y="114" width="25" height="4" rx="5" fill="#7693AE" opacity="1"/>
+<rect x="793" y="142" width="25" height="4" rx="5" fill="#7693AE" opacity="1"/>
+<rect x="793" y="170" width="25" height="4" rx="5" fill="#7693AE" opacity="1"/>
+<rect x="793" y="198" width="25" height="4" rx="5" fill="#7693AE" opacity="1"/>
+<rect x="793" y="226" width="25" height="4" rx="5" fill="#7693AE" opacity="1"/>
+<rect x="843" y="177" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="846" y="214" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="904" y="177" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="907" y="214" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="965" y="177" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="968" y="214" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="1026" y="177" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="1029" y="214" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="1087" y="177" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="1090" y="214" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="843" y="230" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="846" y="267" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="904" y="230" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="907" y="267" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="965" y="230" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="968" y="267" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="1026" y="230" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="1029" y="267" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+<rect x="1087" y="230" width="50" height="32" rx="5" fill="#2A4258" opacity="1"/>
+<rect x="1090" y="267" width="43" height="4" rx="5" fill="#82DDBE" opacity="0.55"/>
+</svg>

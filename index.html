@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="로그인, 게임, 스토어와 고객지원 페이지로 연결되는 넥슨 클론 프로젝트의 시작 화면입니다.">
+    <title>넥슨 | 전체 서비스</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <a class="skip-link" href="#services">전체 서비스로 건너뛰기</a>
+    <header class="site-header">
+        <a class="menu-link" href="#services"><span class="menu-icon" aria-hidden="true"></span>메뉴</a>
+        <a class="header-logo" href="index.html" aria-label="넥슨 시작 화면"><img src="html/images/logo.png" alt="NEXON"></a>
+        <a class="header-login" href="html/01_login.html">로그인</a>
+    </header>
+
+    <main>
+        <a class="main-banner" href="html/02_main_page.html" aria-label="넥슨 메인 페이지로 이동">
+            <img src="html/images/main_banner.jpg" alt="메이플스토리 월드 메이플 플래닛 추석 이벤트">
+        </a>
+        <nav class="service-nav" aria-label="주요 서비스">
+            <div class="content-width">
+                <a href="html/02_main_page.html">게임</a>
+                <a href="html/03_order_page.html">넥슨에센셜</a>
+                <a href="html/01_login.html">로그인</a>
+                <a href="html/04_customer_service.html">고객센터</a>
+                <a href="html/05_security_centre.html">보안센터</a>
+                <a href="html/06_notice.html">공지사항</a>
+            </div>
+        </nav>
+
+        <section id="services" class="services content-width" aria-labelledby="services-title">
+            <div class="section-heading">
+                <h1 id="services-title">전체 서비스</h1>
+                <a href="html/04_customer_service.html">도움이 필요하신가요? <span aria-hidden="true">›</span></a>
+            </div>
+            <!-- 서비스별 페이지로 바로 이동합니다. -->
+            <div class="service-grid">
+                <a class="service-card" href="html/02_main_page.html">
+                    <img class="service-preview" src="docs/readme/02-main.png" alt="넥슨 메인 페이지 미리보기">
+                    <div class="service-info"><h2>넥슨 게임</h2><p>추천 게임과 전체 게임을 만나보세요.</p><span class="service-arrow" aria-hidden="true">›</span></div>
+                </a>
+                <a class="service-card" href="html/03_order_page.html">
+                    <img class="service-preview" src="docs/readme/03-store.png" alt="넥슨에센셜 스토어 미리보기">
+                    <div class="service-info"><h2>넥슨에센셜</h2><p>게임의 즐거움을 일상에서도 함께하세요.</p><span class="service-arrow" aria-hidden="true">›</span></div>
+                </a>
+                <a class="service-card" href="html/01_login.html">
+                    <img class="service-preview" src="docs/readme/01-login.png" alt="로그인 페이지 미리보기">
+                    <div class="service-info"><h2>넥슨 로그인</h2><p>넥슨ID로 서비스를 이용하세요.</p><span class="service-arrow" aria-hidden="true">›</span></div>
+                </a>
+                <a class="service-card" href="html/04_customer_service.html">
+                    <img class="service-preview" src="docs/readme/04-support.png" alt="고객센터 미리보기" loading="lazy">
+                    <div class="service-info"><h2>고객센터</h2><p>게임 이용에 필요한 도움을 확인하세요.</p><span class="service-arrow" aria-hidden="true">›</span></div>
+                </a>
+                <a class="service-card" href="html/05_security_centre.html">
+                    <img class="service-preview" src="docs/readme/05-security.png" alt="보안센터 미리보기" loading="lazy">
+                    <div class="service-info"><h2>보안센터</h2><p>소중한 계정을 안전하게 관리하세요.</p><span class="service-arrow" aria-hidden="true">›</span></div>
+                </a>
+                <a class="service-card" href="html/06_notice.html">
+                    <img class="service-preview" src="docs/readme/06-notice.png" alt="공지사항 미리보기" loading="lazy">
+                    <div class="service-info"><h2>공지사항</h2><p>넥슨의 새로운 소식을 확인하세요.</p><span class="service-arrow" aria-hidden="true">›</span></div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="content-width">
+            <nav class="footer-links" aria-label="하단 서비스"><a href="html/02_main_page.html">게임</a><a href="html/03_order_page.html">넥슨에센셜</a><a href="html/04_customer_service.html">고객센터</a><a href="html/05_security_centre.html">보안센터</a><a href="html/06_notice.html">공지사항</a></nav>
+            <p>AX 1기 HTML/CSS 팀 프로젝트</p>
+            <p>본 페이지는 넥슨 웹사이트를 참고한 학습용 클론입니다.</p>
+            <a class="footer-logo" href="index.html"><img src="html/images/logo.png" alt="NEXON"></a>
+        </div>
+    </footer>
+</body>
+</html>

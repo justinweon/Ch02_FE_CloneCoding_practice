@@ -38,6 +38,8 @@
     text-decoration: none;
 }
 
+
+
 .customer-service button {
     padding: 0;
     border: 0;
@@ -121,6 +123,28 @@
     border-radius: 20px;
     font-size: 15px;
     font-weight: 700;
+}
+
+/* 기본 상태 */
+.ico-nxnaver-prime {
+    display: block;
+}
+
+.ico-nxnaver-hover {
+    display: none;
+}
+
+/* 부모 링크에 마우스를 올린 상태 */
+.ico-nxnaver:hover .ico-nxnaver-prime {
+    display: none;
+}
+
+.ico-nxnaver:hover .ico-nxnaver-hover {
+    display: block;
+}
+
+.ico-nxnaver .ico-nxnaver-hover {
+    display: none;
 }
 
 .customer-service .site-nav {

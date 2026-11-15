@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">장예지 / 메인 구현과 회고</title>
+  <desc id="desc">AX 1기 HTML/CSS 팀 프로젝트. 배너와 게임 목록을 모은 서비스 첫 화면. 오른쪽에는 담당 화면을 나타낸 장식용 레이아웃 그림.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#17273F"/><stop offset="1" stop-color="#0B1322"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#A1B9D8" stroke-opacity=".04"/></pattern>
+  </defs>
+  <rect width="1200" height="340" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#grid)"/>
+  <path d="M56 48H94" stroke="#F4BE73" stroke-width="4"/>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, sans-serif">
+    <text x="108" y="54" fill="#AEBFD4" font-size="14" letter-spacing="2">AX 1 / WEB CLONE PORTFOLIO</text>
+    <text x="56" y="145" fill="#F5F8FF" font-size="64" font-weight="700" letter-spacing="2">장예지</text>
+    <text x="57" y="187" fill="#F4BE73" font-size="25" font-weight="700">메인</text>
+    <text x="57" y="224" fill="#BBCADE" font-size="18">배너와 게임 목록을 모은 서비스 첫 화면</text>
+    <text x="57" y="284" fill="#92A8C3" font-size="14" letter-spacing="1.5">02 / 06</text>
+    <text x="144" y="284" fill="#D2DEED" font-size="14">배너 / 게임 카드 / 페이지 연결</text>
+  </g>
+  <rect x="766" y="48" width="390" height="244" rx="12" fill="#101D30" opacity="1"/>
+<rect x="766.5" y="48.5" width="389" height="243" rx="12" fill="none" stroke="#34445E"/>
+<circle cx="786" cy="65" r="3" fill="#F4BE73" opacity="1.0"/>
+<circle cx="799" cy="65" r="3" fill="#F4BE73" opacity="0.75"/>
+<circle cx="812" cy="65" r="3" fill="#F4BE73" opacity="0.5"/>
+<rect x="833" y="62" width="168" height="5" rx="5" fill="#3E506C" opacity="1"/>
+<path d="M767 81H1155" stroke="#34445E"/>
+<rect x="786" y="99" width="350" height="86" rx="5" fill="#F4BE73" opacity="0.16"/>
+<rect x="801" y="116" width="108" height="7" rx="5" fill="#F4BE73" opacity="1"/>
+<rect x="801" y="131" width="153" height="5" rx="5" fill="#6B829F" opacity="1"/>
+<rect x="801" y="151" width="76" height="17" rx="5" fill="#F4BE73" opacity="1"/>
+<rect x="786" y="176" width="65" height="9" rx="5" fill="#F4BE73" opacity="0.35"/>
+<rect x="857" y="176" width="65" height="9" rx="5" fill="#F4BE73" opacity="0.35"/>
+<rect x="928" y="176" width="65" height="9" rx="5" fill="#F4BE73" opacity="0.35"/>
+<rect x="999" y="176" width="65" height="9" rx="5" fill="#F4BE73" opacity="0.35"/>
+<rect x="1070" y="176" width="65" height="9" rx="5" fill="#F4BE73" opacity="0.35"/>
+<rect x="786" y="201" width="68" height="44" rx="5" fill="#24324B" opacity="1"/>
+<rect x="786" y="255" width="54" height="5" rx="5" fill="#5A718E" opacity="1"/>
+<rect x="866" y="201" width="68" height="44" rx="5" fill="#24324B" opacity="1"/>
+<rect x="866" y="255" width="54" height="5" rx="5" fill="#5A718E" opacity="1"/>
+<rect x="946" y="201" width="68" height="44" rx="5" fill="#24324B" opacity="1"/>
+<rect x="946" y="255" width="54" height="5" rx="5" fill="#5A718E" opacity="1"/>
+<rect x="1034" y="201" width="102" height="68" rx="5" fill="#1B3049" opacity="1"/>
+<rect x="1045" y="242" width="80" height="16" rx="5" fill="#F4BE73" opacity="1"/>
+</svg>

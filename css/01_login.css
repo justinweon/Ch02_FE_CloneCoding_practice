@@ -27,7 +27,6 @@ a {
 
 /* 공통 스타일 S */
 :root {
-    --font-main:'Pretendard Variable', pretendard, -apple-system, sans-serif;
     --main-max-size: 500px;
     --main-min-size: 470px;
     --primary-font-size: 14px;

@@ -18,6 +18,7 @@ ul, ol, dl, dt, dd{
 a {
     text-decoration: none;
     font-weight:700;
+    color: gray;
 }
 img {
     border: 0;
@@ -91,6 +92,7 @@ img {
     font-size: 13px;
     font-weight: 700;
 }
+
 
 
 
@@ -256,6 +258,17 @@ img {
     display: flex;
     gap: 40px;
 }
+.special-offer__list .product-card {
+    flex: 1;
+    min-width: 0;
+}
+.special-offer__list .product-card img {
+    width: 100%;
+    display: block;
+}
+.product-card__info {
+    font-weight: 700;
+}
 
 /*best seller*/
 .best-seller-background {
@@ -285,4 +298,8 @@ img {
     width: 100%;
     display: block;
     margin-bottom: 15px;
+}
+.footer-box {
+    display: flex;
+    background: white;
 }

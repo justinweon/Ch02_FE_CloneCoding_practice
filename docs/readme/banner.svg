@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">AX-web-clone — AX 1기 팀 프로젝트</title>
+  <desc id="desc">HTML과 CSS로 구현한 여섯 개의 넥슨 웹사이트 화면</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c32"/><stop offset="1" stop-color="#080e1a"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#8cf1ce"/><stop offset="1" stop-color="#7fb9ff"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#cbdcff" stroke-opacity=".05"/></pattern>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+  <rect x="56" y="57" width="32" height="4" rx="2" fill="#8cf1ce"/>
+  <g font-family="Segoe UI, Malgun Gothic, sans-serif">
+    <text x="102" y="64" font-size="15" font-weight="600" letter-spacing="3" fill="#a9bed7">AX COHORT 01 / TEAM PROJECT</text>
+    <text x="54" y="151" font-size="64" font-weight="750" letter-spacing="-2" fill="#f5f8ff">AX-web-clone</text>
+    <text x="58" y="196" font-size="22" fill="#b5c5dc">넥슨 웹사이트 HTML / CSS 클론 코딩</text>
+    <text x="58" y="280" font-size="14" letter-spacing="2" fill="#8cf1ce">6 CONTRIBUTORS</text>
+    <text x="265" y="280" font-size="14" letter-spacing="2" fill="#8cf1ce">6 PAGES</text>
+    <text x="400" y="280" font-size="14" letter-spacing="2" fill="#8cf1ce">ONE PROJECT</text>
+    <g transform="translate(872 58)">
+      <rect width="348" height="244" rx="16" fill="#16243a" stroke="#334760"/>
+      <path d="M0 40H348" stroke="#334760"/>
+      <circle cx="20" cy="20" r="4" fill="#8cf1ce"/><circle cx="36" cy="20" r="4" fill="#7fb9ff"/><circle cx="52" cy="20" r="4" fill="#71829c"/>
+      <text x="78" y="25" font-size="11" letter-spacing="1" fill="#a9bed7">HTML + CSS</text>
+      <g fill="#21334c" stroke="#3b526e"><rect x="20" y="60" width="146" height="72" rx="8"/><rect x="182" y="60" width="146" height="72" rx="8"/><rect x="20" y="150" width="146" height="72" rx="8"/><rect x="182" y="150" width="146" height="72" rx="8"/></g>
+      <path d="M38 80H105M38 94H143M38 108H88M200 80H267M200 94H305M200 108H250M38 170H105M38 184H143M38 198H88M200 170H267M200 184H305M200 198H250" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    </g>
+  </g>
+</svg>
